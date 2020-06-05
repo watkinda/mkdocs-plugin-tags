@@ -1,8 +1,8 @@
 ---
-title: Tags
+title: {{title}}
 ---
 
-# Contents grouped by tag
+# Contents grouped by {{tagname}}
 
 {% for tag, pages in tags %}
 

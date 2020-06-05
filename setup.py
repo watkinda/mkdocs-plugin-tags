@@ -14,19 +14,19 @@ def read_file(fname):
 
 
 setup(
-    name='tags-macros-plugin',
-    version='0.2.0',
+    name='watkinda-tags-plugin',
+    version='1.0.0',
     description="Processes tags in yaml metadata",
     long_description=read_file('README.md'),
     long_description_content_type='text/markdown',
     keywords='mkdocs python markdown tags',
     url='',
-    author='JL Diaz',
-    author_email='jldiaz@gmail.com',
+    author='David Watkin',
+    author_email='diwatkin@gmail.com',
     license='MIT',
     python_requires='>=3.6',
     install_requires=[
-        'mkdocs>=0.17',
+        'mkdocs>=1.1',
         'jinja2',
     ],
     classifiers=[
@@ -42,7 +42,7 @@ setup(
     package_data={'tags': ['templates/*.md.template']},
     entry_points={
         'mkdocs.plugins': [
-            'tags = tags.plugin:TagsPlugin'
+            'diwtags = tags.plugin:TagsPlugin'
         ]
     }
 )
